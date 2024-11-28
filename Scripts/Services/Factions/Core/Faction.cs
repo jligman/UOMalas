@@ -85,7 +85,7 @@ namespace Server.Factions
         public static void Configure()
         {
             NewCoMLocation = Config.Get("Factions.NewCoMLocation", true);
-            Enabled = !Server.Engines.VvV.ViceVsVirtueSystem.Enabled;
+            Enabled = false;
 
             EventSink.Login += OnLogin;
 
